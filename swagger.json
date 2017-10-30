@@ -1,0 +1,62 @@
+{
+  "swagger": "2.0",
+  "info": {},
+  "paths": {
+    "/book": {
+      "get": {
+        "description": "Returns the name of the book and its summaries",
+        "consumes": [
+          "text/plain"
+        ],
+        "produces": [
+          "text/plain"
+        ],
+        "tags": [
+          "getBookHandler"
+        ],
+        "operationId": "GetBookHandler",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "List of books along with summaries to be returned.",
+            "name": "name",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The hello message"
+          }
+        }
+      },
+      "post": {
+        "description": "Returns the name of the book and its summaries",
+        "consumes": [
+          "text/plain"
+        ],
+        "produces": [
+          "text/plain"
+        ],
+        "tags": [
+          "createBookHandler"
+        ],
+        "operationId": "CreateBookHandler",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "List of books along with summaries to be returned.",
+            "name": "name",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The hello message"
+          }
+        }
+      }
+    }
+  }
+}
