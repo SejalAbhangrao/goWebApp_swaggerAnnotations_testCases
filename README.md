@@ -8,6 +8,9 @@ To run the server on your system:
 4. Run `go build` to create the binary (`go_web_app_with_swagger_and_test_cases`)
 5. Run the binary : `./go_web_app_with_swagger_and_test_cases`
 
+5. To generate swagger documentation 
+`swagger generate spec -o ./swagger.json`
+
 To run tests:
 
 1. Run `dep ensure` to install dependencies
